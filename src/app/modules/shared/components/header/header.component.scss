@@ -1,0 +1,21 @@
+.br-header {
+    background-color: #43E895;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 50px 0 10px 0;
+}
+
+.br-header-title {
+    font-size: 32px;
+    font-family: 'Avenir Demi Bold';
+    color: #ffffff;
+    margin: 0 0 10px;
+}
+
+.br-header-img {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}

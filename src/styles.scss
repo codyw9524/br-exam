@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Avenir Demi Bold';
+    src: url('./assets/fonts/AvenirNext-DemiBold.ttf')
+}
+
+@font-face {
+    font-family: 'Avenir Regular';
+    src: url('./assets/fonts/AvenirNext-Regular.ttf')
+}
+
+body {
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Avenir Demi Bold';
+    font-size: 16px;
+    margin: 0;
+}
+
+p {
+    font-family: 'Avenir Regular';
+    font-size: 12px;
+    margin: 0;
+}

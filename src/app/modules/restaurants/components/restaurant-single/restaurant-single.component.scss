@@ -1,0 +1,21 @@
+.br-restaurant-single {
+    display: flex;
+    height: 180px;
+    position: relative;
+    background-color: black;
+}
+
+.br-restaurant-single-info {
+    position: absolute;
+    bottom: 0;
+    padding: 6px 12px;
+
+    .name {
+        color: #ffffff;
+        margin: 0 0 6px;
+    }
+
+    .category {
+        color: #ffffff;
+    }
+} 
