@@ -4,12 +4,11 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 50px 0 10px 0;
+    padding: 40px 0 10px 0;
 }
 
 .br-header-title {
-    font-size: 32px;
-    font-family: 'Avenir Demi Bold';
+    font-size: 17px;
     color: #ffffff;
     margin: 0 0 10px;
 }
@@ -18,4 +17,5 @@
     position: absolute;
     right: 10px;
     bottom: 10px;
+    height: 40px;
 }

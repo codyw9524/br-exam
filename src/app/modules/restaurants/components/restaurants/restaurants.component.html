@@ -1,3 +1,78 @@
-<ng-container *ngFor="let restuarant of restaurants | async">
-  <br-restaurant-single [restaurant]="restuarant"></br-restaurant-single>
+<ng-container>
+
+    <div class="restaurant mobile"  *ngFor="let restaurant of restaurants">
+
+        <div class="call-to-action" (click)="animate(detailsElement)">
+            <br-restaurant-single [restaurant]="restaurant"></br-restaurant-single>
+        </div>
+
+        <div #detailsElement class="details closed">
+            <agm-map
+                [latitude]="restaurant.location.lat"
+                [longitude]="restaurant.location.lng"
+                [zoom]="16"
+                [clickableIcons]="true"
+                [scrollwheel]="false"
+                [streetViewControl]="false"
+                (mapReady)="mapIsReady()">
+            </agm-map>
+
+            <br-restaurant-detail [restaurant]="restaurant"></br-restaurant-detail>
+        </div>
+
+    </div>
+
+    <div class="web">
+        <div class="column">
+                <div class="restaurant" *ngFor="let restaurant of restaurants_columnA">
+
+                        <div class="call-to-action" (click)="animate(detailsElement)">
+                            <br-restaurant-single [restaurant]="restaurant"></br-restaurant-single>
+                        </div>
+                
+                        <div #detailsElement class="details closed">
+                            <agm-map
+                                [latitude]="restaurant.location.lat"
+                                [longitude]="restaurant.location.lng"
+                                [zoom]="16"
+                                [clickableIcons]="true"
+                                [scrollwheel]="false"
+                                [streetViewControl]="false"
+                                (mapReady)="mapIsReady()">
+                            </agm-map>
+                
+                            <br-restaurant-detail [restaurant]="restaurant"></br-restaurant-detail>
+                        </div>
+                
+                    </div>
+
+
+        </div>
+        <div class="column">
+                <div class="restaurant" *ngFor="let restaurant of restaurants_columnB">
+
+                        <div class="call-to-action" (click)="animate(detailsElement)">
+                            <br-restaurant-single [restaurant]="restaurant"></br-restaurant-single>
+                        </div>
+                
+                        <div #detailsElement class="details closed">
+                            <agm-map
+                                [latitude]="restaurant.location.lat"
+                                [longitude]="restaurant.location.lng"
+                                [zoom]="16"
+                                [clickableIcons]="true"
+                                [scrollwheel]="false"
+                                [streetViewControl]="false"
+                                (mapReady)="mapIsReady()">
+                            </agm-map>
+                
+                            <br-restaurant-detail [restaurant]="restaurant"></br-restaurant-detail>
+                        </div>
+                
+                    </div>
+
+
+        </div>
+    </div>
+    
 </ng-container>

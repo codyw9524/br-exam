@@ -1,8 +1,11 @@
 .br-restaurant-single {
     display: flex;
     height: 180px;
+    width: 100%;
     position: relative;
-    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 .br-restaurant-single-info {
@@ -18,4 +21,12 @@
     .category {
         color: #ffffff;
     }
-} 
+}
+
+.mask-1 {
+    -webkit-mask-image: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);;
+    mask-image: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);;
+    background-image: url('../../../../../assets/icons/cellGradientBackground@2x.png');
+    height: 100%;
+    width: 100%;
+}

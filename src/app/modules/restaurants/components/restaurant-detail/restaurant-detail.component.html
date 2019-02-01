@@ -1,0 +1,19 @@
+<div class="info-container">
+  <div class="title-info gutters">
+    <h3>{{ restaurant.name }}</h3>
+    <p>{{ restaurant.category }}</p>
+  </div>
+  <div class="details gutters">
+    <div class="address">
+        <ng-container *ngFor="let address of restaurant.location.formattedAddress; let i = index">
+          <h3 class="regular" *ngIf="i != restaurant.location.formattedAddress.length - 1">{{ address }}</h3>
+        </ng-container>
+    </div>
+    <ng-container *ngIf="restaurant.contact">
+      <h3 class="regular">{{ restaurant.contact.formattedPhone }}</h3>
+      <div class="social-media">
+        <h3 class="regular" *ngIf="restaurant.contact.twitter">@{{ restaurant.contact.twitter }}</h3>
+      </div>
+    </ng-container>
+  </div>
+</div>

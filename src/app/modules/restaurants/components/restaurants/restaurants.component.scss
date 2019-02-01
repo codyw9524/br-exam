@@ -1,0 +1,42 @@
+.details {
+    overflow: hidden;
+    transition: max-height 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+agm-map {
+    height: 180px;
+}
+
+.restaurant {
+    overflow: hidden;
+}
+
+.closed { 
+    max-height: 0px;
+    overflow: hidden;
+}
+.open {
+    max-height: 500px;
+}
+.web {
+    display: none;
+}
+.mobile {
+    display: block
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .mobile {
+        display: none;
+    }
+
+    .web {
+        display: flex;
+        justify-content: center;
+    }
+
+    .column {
+        flex: 1;
+    }
+  }
