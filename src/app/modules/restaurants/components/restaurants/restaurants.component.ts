@@ -12,7 +12,6 @@ export class RestaurantsComponent implements OnInit {
   restaurants: Restaurant[];
   restaurants_columnA: Restaurant[];
   restaurants_columnB: Restaurant[];
-  mapReady: boolean;
 
   constructor(
     private restaurantService: RestaurantService,
@@ -20,10 +19,6 @@ export class RestaurantsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getRestaurants();
-  }
-
-  mapIsReady(): void {
-    this.mapReady = true;
   }
 
   animate(el: any): void {
