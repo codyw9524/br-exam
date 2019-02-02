@@ -17,5 +17,6 @@ npm install -g http-server
 
 ```
 cd ${PROJECT_ROOT_DIR}
+npm install
 npm run start
 ```
