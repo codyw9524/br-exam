@@ -10,7 +10,7 @@
             <agm-map
                 [latitude]="restaurant.location.lat"
                 [longitude]="restaurant.location.lng"
-                [zoom]="16"
+                [zoom]="setZoom(restaurant)"
                 [clickableIcons]="true"
                 [scrollwheel]="false"
                 [streetViewControl]="false">
@@ -33,7 +33,7 @@
                     <agm-map
                         [latitude]="restaurant.location.lat"
                         [longitude]="restaurant.location.lng"
-                        [zoom]="16"
+                        [zoom]="setZoom(restaurant)"
                         [clickableIcons]="true"
                         [scrollwheel]="false"
                         [streetViewControl]="false">
@@ -55,7 +55,7 @@
                     <agm-map
                         [latitude]="restaurant.location.lat"
                         [longitude]="restaurant.location.lng"
-                        [zoom]="16"
+                        [zoom]="setZoom(restaurant)"
                         [clickableIcons]="true"
                         [scrollwheel]="false"
                         [streetViewControl]="false">

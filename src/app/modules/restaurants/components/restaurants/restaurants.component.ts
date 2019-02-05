@@ -41,11 +41,32 @@ export class RestaurantsComponent implements OnInit {
     }
   }
 
+  setZoom(restaurant: Restaurant): number {
+    switch(restaurant.name) {
+      case 'Hopdoddy Burger Bar': {
+        return 18;
+      }
+      case `Chuy's`: {
+        return 17;
+      }
+      case 'The Original Pancake House': {
+        return 19;
+      }
+      case 'Buffalo Wild Wings': {
+        return 17;
+      }
+      default: {
+        return 16;
+      }
+    }
+  }
+
   private getRestaurants(): void {
     this.restaurantService
       .list()
       .subscribe((res: Restaurant[]) => {
         this.restaurants = res;
+        console.log(this.restaurants)
         this.restaurants_columnA = res.slice(0, Math.ceil(res.length/2));
         this.restaurants_columnB = res.slice(Math.ceil(res.length/2));
       })
