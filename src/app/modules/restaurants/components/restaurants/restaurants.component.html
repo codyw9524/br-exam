@@ -1,8 +1,8 @@
 <ng-container>
 
-    <div class="restaurant mobile"  *ngFor="let restaurant of restaurants">
+    <div #restaurantElement class="restaurant mobile"  *ngFor="let restaurant of restaurants">
 
-        <div class="call-to-action" (click)="animate(detailsElement)">
+        <div class="call-to-action" (click)="animate(detailsElement, restaurantElement)">
             <br-restaurant-single [restaurant]="restaurant"></br-restaurant-single>
         </div>
 
@@ -23,9 +23,9 @@
 
     <div class="web">
         <div class="column">
-            <div class="restaurant" *ngFor="let restaurant of restaurants_columnA">
+            <div #restaurantElement class="restaurant" *ngFor="let restaurant of restaurants_columnA">
 
-                <div class="call-to-action" (click)="animate(detailsElement)">
+                <div class="call-to-action" (click)="animate(detailsElement, restaurantElement)">
                     <br-restaurant-single [restaurant]="restaurant"></br-restaurant-single>
                 </div>
         
@@ -45,9 +45,9 @@
             </div>
         </div>
         <div class="column">
-            <div class="restaurant" *ngFor="let restaurant of restaurants_columnB">
+            <div #restaurantElement class="restaurant" *ngFor="let restaurant of restaurants_columnB">
 
-                <div class="call-to-action" (click)="animate(detailsElement)">
+                <div class="call-to-action" (click)="animate(detailsElement, restaurantElement)">
                     <br-restaurant-single [restaurant]="restaurant"></br-restaurant-single>
                 </div>
         
