@@ -66,7 +66,6 @@ export class RestaurantsComponent implements OnInit {
       .list()
       .subscribe((res: Restaurant[]) => {
         this.restaurants = res;
-        console.log(this.restaurants)
         this.restaurants_columnA = res.slice(0, Math.ceil(res.length/2));
         this.restaurants_columnB = res.slice(Math.ceil(res.length/2));
       })
